@@ -2,6 +2,7 @@
 using Gifter.Data;
 using Gifter.Repositories;
 using Gifter.Models;
+using System;
 
 namespace Gifter.Controllers
 {
@@ -63,5 +64,16 @@ namespace Gifter.Controllers
             return NoContent();
         }
 
+        [HttpGet("search")]
+        public IActionResult Search(string q, bool sortDesc)
+        {
+            return Ok(_postRepository.Search(q, sortDesc));
+        }
+
+        [HttpGet("searchDate")]
+        public IActionResult SearchDate(DateTime dateTime, bool sortDesc)
+        {
+            return Ok(_postRepository.SearchDate(dateTime, sortDesc));
+        }
     }
 }
