@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const PostContext = React.createContext()
 
 export const PostProvider = props => {
-  const [post, setPosts] = useState([])
+  const [posts, setPosts] = useState([])
 
   const getAllPosts = () => {
     return fetch('/api/post')
@@ -18,11 +18,11 @@ export const PostProvider = props => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(post)
-    })
+    }).then(getAllPosts)
   }
 
   return (
-    <PostContext.Provider value={{ thePosts, getAllPosts, addPost }}>
+    <PostContext.Provider value={{ posts, getAllPosts, addPost }}>
       {props.children}
     </PostContext.Provider>
   )
