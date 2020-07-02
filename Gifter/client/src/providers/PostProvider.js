@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const PostContext = React.createContext()
 
 export const PostProvider = props => {
-  const [thePosts, setPosts] = useState([])
+  const [post, setPosts] = useState([])
 
   const getAllPosts = () => {
     return fetch('/api/post')
