@@ -149,3 +149,6 @@ C:\Users\phili\source\Repo-C-39\Gifter\Gifter\obj\Debug\netcoreapp3.1\staticweba
 C:\Users\phili\source\Repo-C-39\Gifter\Gifter\obj\Debug\netcoreapp3.1\Gifter.dll
 C:\Users\phili\source\Repo-C-39\Gifter\Gifter\obj\Debug\netcoreapp3.1\Gifter.pdb
 C:\Users\phili\source\Repo-C-39\Gifter\Gifter\obj\Debug\netcoreapp3.1\Gifter.genruntimeconfig.cache
+C:\Users\phili\source\Repo-C-39\Gifter\Gifter\bin\Debug\netcoreapp3.1\client\package-lock.json
+C:\Users\phili\source\Repo-C-39\Gifter\Gifter\bin\Debug\netcoreapp3.1\client\package.json
+C:\Users\phili\source\Repo-C-39\Gifter\Gifter\bin\Debug\netcoreapp3.1\client\public\manifest.json
