@@ -67,6 +67,10 @@ namespace Gifter.Controllers
         [HttpGet("search")]
         public IActionResult Search(string q, bool sortDesc)
         {
+            if(String.IsNullOrEmpty(q) )
+            {
+                return Ok(_postRepository.GetAll());
+            }
             return Ok(_postRepository.Search(q, sortDesc));
         }
 
