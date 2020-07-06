@@ -23,7 +23,7 @@ export const SearchResults = ({ searchTerms }) => {
   useEffect(() => {
     if (searchTerms !== '') {
       const subset = posts.filter(post =>
-        post.name.toLowerCase().includes(searchTerms)
+        post.title.toLowerCase().includes(searchTerms)
       )
       setFiltered(subset)
     } else {

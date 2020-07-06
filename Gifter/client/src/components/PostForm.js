@@ -1,14 +1,15 @@
 import React, { useContext, useRef } from 'react'
 import { PostContext } from '../providers/PostProvider'
+import { useHistory } from 'react-router-dom'
 
 export default props => {
-  const { addPost } = useContext(PostContext)
-
+  const { addPost, posts } = useContext(PostContext)
   const title = useRef('title')
   const imageUrl = useRef('imageUrl')
   const caption = useRef('caption')
   const userProfileId = useRef('userProfileId')
   const dateCreated = useRef('dateCreated')
+  const history = useHistory()
 
   const constructNewPost = () => {
     const newPostObject = {
@@ -19,7 +20,7 @@ export default props => {
       dateCreated: new Date()
     }
     console.log(newPostObject)
-    addPost(newPostObject).then(props.toggler)
+    return addPost(newPostObject).then(props.toggler)
   }
 
   return (
@@ -100,7 +101,7 @@ export default props => {
         type='submit'
         onClick={evt => {
           evt.preventDefault() // Prevent browser from submitting the form
-          constructNewPost()
+          constructNewPost().then(p => history.push('/'))
         }}
         className='btn btn-primary'
       >
