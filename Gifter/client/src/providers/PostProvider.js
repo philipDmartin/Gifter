@@ -1,6 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, createContext } from 'react'
+import { Spinner } from 'reactstrap'
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
 
 export const PostContext = React.createContext()
+
+const getToken = () => firebase.auth().currentUser.getIdToken()
 
 export const PostProvider = props => {
   const [posts, setPosts] = useState([])
@@ -16,9 +21,11 @@ export const PostProvider = props => {
   }
 
   const addPost = post => {
-    return fetch('/api/post', {
+    return getToken().then(token => 
+    fetch('/api/post', {
       method: 'POST',
       headers: {
+        Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(post)

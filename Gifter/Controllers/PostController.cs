@@ -11,6 +11,7 @@ namespace Gifter.Controllers
     public class PostController : ControllerBase
     {
         private readonly PostRepository _postRepository;
+
         public PostController(ApplicationDbContext context)
         {
             _postRepository = new PostRepository(context);
