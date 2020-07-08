@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phili\\source\\Repo-C-39\\Gifter\\Gifter\\Gifter.csproj": {}
+    "C:\\Users\\natha\\workspace\\Gifter\\Gifter\\Gifter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phili\\source\\Repo-C-39\\Gifter\\Gifter\\Gifter.csproj": {
+    "C:\\Users\\natha\\workspace\\Gifter\\Gifter\\Gifter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phili\\source\\Repo-C-39\\Gifter\\Gifter\\Gifter.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\workspace\\Gifter\\Gifter\\Gifter.csproj",
         "projectName": "Gifter",
-        "projectPath": "C:\\Users\\phili\\source\\Repo-C-39\\Gifter\\Gifter\\Gifter.csproj",
-        "packagesPath": "C:\\Users\\phili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phili\\source\\Repo-C-39\\Gifter\\Gifter\\obj\\",
+        "projectPath": "C:\\Users\\natha\\workspace\\Gifter\\Gifter\\Gifter.csproj",
+        "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\natha\\workspace\\Gifter\\Gifter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\phili\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
