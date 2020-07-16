@@ -39,6 +39,7 @@ namespace Gifter.Controllers
         {
             return Ok(_postRepository.GetByUserProfileId(id));
         }
+
         [HttpPost]
         public IActionResult Post(Post post)
         {
